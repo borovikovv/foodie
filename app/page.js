@@ -6,7 +6,9 @@ export default function Home() {
     <>
       <header>
         <div className={classes.header}>
-          <div className={classes.slideshow}></div>
+          <div className={classes.slideshow}>
+            
+          </div>
           <div>
             <div className={classes.hero}>
               <h1>HextLevel food for Foodies</h1>
