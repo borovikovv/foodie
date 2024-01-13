@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import classes from './page.module.css';
+import ImageSlideshow from './components/images/image-sidebar.js';
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <header>
         <div className={classes.header}>
           <div className={classes.slideshow}>
-            
+            <ImageSlideshow />
           </div>
           <div>
             <div className={classes.hero}>
