@@ -32,7 +32,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/meals/page.tsx" , "app/meals/share/page.js", "app/meals/[mealSlug]/page.js", "app/main-header.js" ],
+, "app/meals/page.tsx" , "app/meals/share/page.js", "app/meals/[mealSlug]/page.js", "app/main-header.js", "app/components/images/nav-link/nav-link.js" ],
   "exclude": [
     "node_modules"
   ]
