@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import classes from './page.module.css';
 import { getMealById } from '@/lib/meals';
+import DeleteMealButton from '../../components/meals/delete-meal-button';
 
 export default async function MealSlug ({ params }) {
   const meal = await getMealById(params.mealSlug);
@@ -8,6 +9,9 @@ export default async function MealSlug ({ params }) {
 
   return (
     <>
+      <div className={classes.buttonBlock}>
+        <DeleteMealButton meal={meal} />
+      </div>
       <header className={classes.header}>
         <div className={classes.image}>
           <Image src={meal.image} fill alt={meal.slug} />
