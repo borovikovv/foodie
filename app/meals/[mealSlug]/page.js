@@ -3,6 +3,15 @@ import classes from './page.module.css';
 import { getMealById } from '@/lib/meals';
 import DeleteMealButton from '../../components/meals/delete-meal-button';
 
+export async function generateMetadata({ params }) {
+  const meal = await getMealById(params.mealSlug);
+  
+  return {
+    title: meal.title,
+    description: meal.summary,
+  }
+}
+
 export default async function MealSlug ({ params }) {
   const meal = await getMealById(params.mealSlug);
   const instructions = meal.instructions.replaceAll('\n', '<br />')
